@@ -57,11 +57,7 @@ createApp({
     },
 
     resumeAutoplay(){
-      if(this.rotationDirection === true){
-        autoScroll = setInterval(() => this.loopSlider(true), 3000)
-      }else if (this.rotationDirection === false){
-        autoScroll = setInterval(() => this.loopSlider(false), 3000)
-      }
+        autoScroll = setInterval(() => this.loopSlider(this.rotationDirection), 3000)
     },
 
     reverseRotation(){

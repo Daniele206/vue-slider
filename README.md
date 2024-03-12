@@ -23,3 +23,4 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 4. Aggiungere le preview cliccabili che abbiano la funzione di mandarti alla foto cliccata.
 5. Aggiungere autoplay.
 6. Aggiungere l'hovere per fermare l'autoplay.
+7. Aggiungere il doppio click per far invertire la rotazione del carousell.
