@@ -36,11 +36,19 @@ createApp({
   },
 
   methods:{
-    
+    loopSlider(direction){
+
+      direction ? this.counter++ : this.counter--
+
+      if(this.counter === this.imgContainer.length){
+        this.counter = 0;
+      }else if(this.counter < 0){
+        this.counter = this.imgContainer.length - 1;
+      }
+    }
   },
 
   mounted(){
-
   },
 
 }).mount('#app');
