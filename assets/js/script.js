@@ -46,10 +46,14 @@ createApp({
         this.counter = this.imgContainer.length - 1;
       }
     },
+
+    infiniteLoop(){
+      setInterval(() => this.loopSlider(true), 3000)
+    }
   },
 
   mounted(){
-
+    this.infiniteLoop()
   },
 
 }).mount('#app');
