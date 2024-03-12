@@ -26,20 +26,35 @@
     
         </div>
         <div class="preview">
-          <div id="select1" class="img-preview shadow">
-            <img src="./assets/img/01.webp" alt="img1">
+          <div v-if="counter === 0" id="select1" class="img-preview selected">
+            <img :src="imgContainer[0].img" alt="img1">
           </div>
-          <div id="select2" class="img-preview shadow">
-            <img src="./assets/img/02.webp" alt="img2">
+          <div v-else id="select1" class="img-preview shadow">
+            <img :src="imgContainer[0].img" alt="img1">
           </div>
-          <div id="select3" class="img-preview shadow">
-            <img src="./assets/img/03.webp" alt="img3">
+          <div v-if="counter === 1" id="select1" class="img-preview selected">
+            <img :src="imgContainer[1].img" alt="img1">
           </div>
-          <div id="select4" class="img-preview shadow">
-            <img src="./assets/img/04.webp" alt="img4">
+          <div v-else id="select1" class="img-preview shadow">
+            <img :src="imgContainer[1].img" alt="img1">
           </div>
-          <div id="select5" class="img-preview shadow">
-            <img src="./assets/img/05.webp" alt="img5">
+          <div v-if="counter === 2" id="select1" class="img-preview selected">
+            <img :src="imgContainer[2].img" alt="img1">
+          </div>
+          <div v-else id="select1" class="img-preview shadow">
+            <img :src="imgContainer[2].img" alt="img1">
+          </div>
+          <div v-if="counter === 3" id="select1" class="img-preview selected">
+            <img :src="imgContainer[3].img" alt="img1">
+          </div>
+          <div v-else id="select1" class="img-preview shadow">
+            <img :src="imgContainer[3].img" alt="img1">
+          </div>
+          <div v-if="counter === 4" id="select1" class="img-preview selected">
+            <img :src="imgContainer[4].img" alt="img1">
+          </div>
+          <div v-else id="select1" class="img-preview shadow">
+            <img :src="imgContainer[4].img" alt="img1">
           </div>
         </div>
       </div>

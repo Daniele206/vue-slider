@@ -45,10 +45,12 @@ createApp({
       }else if(this.counter < 0){
         this.counter = this.imgContainer.length - 1;
       }
-    }
+    },
+    
   },
 
   mounted(){
+
   },
 
 }).mount('#app');
