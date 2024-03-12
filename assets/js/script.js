@@ -46,7 +46,6 @@ createApp({
         this.counter = this.imgContainer.length - 1;
       }
     },
-    
   },
 
   mounted(){
