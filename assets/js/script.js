@@ -32,6 +32,7 @@ createApp({
         },
       ],
       counter: 0,
+      rotationDirection: true,
     };
   },
 
@@ -56,7 +57,19 @@ createApp({
     },
 
     resumeAutoplay(){
-      autoScroll = setInterval(() => this.loopSlider(true), 3000)
+      if(this.rotationDirection === true){
+        autoScroll = setInterval(() => this.loopSlider(true), 3000)
+      }else if (this.rotationDirection === false){
+        autoScroll = setInterval(() => this.loopSlider(false), 3000)
+      }
+    },
+
+    reverseRotation(){
+      if(this.rotationDirection === true){
+        this.rotationDirection = false;
+      }else if(this.rotationDirection === false){
+        this.rotationDirection = true;
+      }
     }
   },
 
