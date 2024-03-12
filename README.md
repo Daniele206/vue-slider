@@ -20,3 +20,6 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 1. Copiare HTML e CSS dall'ultimo slider.
 2. Destrutturere Vue e prendere createApp.
 3. Far si che al click delle freccie lo slider funzioni.
+4. Aggiungere le preview cliccabili che abbiano la funzione di mandarti alla foto cliccata.
+5. Aggiungere autoplay.
+6. Aggiungere l'hovere per fermare l'autoplay.
