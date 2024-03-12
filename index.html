@@ -12,7 +12,7 @@
 <body>
   <div id="app">
     <div class="main-vrapper flex-column">
-      <div class="full-carousell">
+      <div @mouseover="stopAutoPlay()" @mouseleave="resumeAutoplay()" class="full-carousell">
         <div class="carousel">
   
           <!-- img -->

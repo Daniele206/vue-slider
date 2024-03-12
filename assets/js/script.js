@@ -48,7 +48,15 @@ createApp({
     },
 
     infiniteLoop(){
-      setInterval(() => this.loopSlider(true), 3000)
+      autoScroll = setInterval(() => this.loopSlider(true), 3000)
+    },
+
+    stopAutoPlay(){
+      clearInterval(autoScroll)
+    },
+
+    resumeAutoplay(){
+      autoScroll = setInterval(() => this.loopSlider(true), 3000)
     }
   },
 
