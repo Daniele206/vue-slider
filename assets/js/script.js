@@ -49,7 +49,7 @@ createApp({
     },
 
     infiniteLoop(){
-      autoScroll = setInterval(() => this.loopSlider(true), 3000)
+      autoScroll = setInterval(() => this.loopSlider(this.rotationDirection), 3000)
     },
 
     stopAutoPlay(){
@@ -61,11 +61,7 @@ createApp({
     },
 
     reverseRotation(){
-      if(this.rotationDirection === true){
-        this.rotationDirection = false;
-      }else if(this.rotationDirection === false){
-        this.rotationDirection = true;
-      }
+      this.rotationDirection = !this.rotationDirection;
     }
   },
 
